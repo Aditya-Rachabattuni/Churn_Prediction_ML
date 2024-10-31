@@ -1,0 +1,303 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Predict Your Customer through customer behavior</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <h1 class="logo"><a href="{% url 'index' %}" style="color: #e43c5c;">Customer<span
+                class="text-white">Churn</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto active" href="{% url 'index' %}">Home</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'UserLogin' %}">User</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'AdminLogin' %}">Admin</a></li>
+
+
+                <li><a class="btn btn-danger p-2 scrollto" href="{% url 'UserRegister' %}">Register</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+    </div>
+</header><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+    <div class="hero-container">
+        {#        <h3>Predict Your<strong>Customer</strong></h3>#}
+        <h1>Predict your Customer </h1>
+        <h2>Dynamic Churn Prediction using Machine Learning Algorithms <br> - Predict your customer through customer
+            behavior </h2>
+        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+</section><!-- End Hero -->
+
+<main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>About</h2>
+                <h3>Predict <span>Your Customer</span></h3>
+                <p>Dynamic Churn Prediction using Machine Learning Algorithms
+                    - Predict your customer through customer behavior.</p>
+            </div>
+
+            <div class="row content">
+                <div class="col-lg-6">
+                    <p>
+                        In current days, the customers are getting more
+                        attracted towards the quality of service (QoS) provided by the
+                        organizations. However, the current era is evidencing higher
+                        competition in providing technologically advanced QoS to the
+                        customers.
+                    </p>
+                    <ul>
+                        <li><i class="ri-check-double-line"></i>
+                            Nevertheless, efficient customer relationship
+                            management systems can be advantageous for the organization
+                            for gaining more customers.
+                        </li>
+                        <li><i class="ri-check-double-line"></i> Maintaining customer relationships
+                            and improve customer retention by adding more profit to the
+                            organizational business.
+                        </li>
+                        <li><i class="ri-check-double-line"></i>
+                            Furthermore, the machine learning
+                            models such as support vector machine algorithms can add more
+                            value to the customer retention strategies
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0">
+                    <p>
+                        <strong>Keywords:</strong>
+                    <ul style="margin-top: -10px;">
+                        <li>Customer relationship management</li>
+                        <li>Customer retention</li>
+                        <li>Customer retention</li>
+                        <li> machine learning</li>
+                        <li> support vector algorithm</li>
+                    </ul>
+                    </p>
+                    <a href="#" class="btn-learn-more">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Services</h2>
+                <h3>Our <span>Services</span></h3>
+                <p>We do offer awesome services.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                        <h4 class="title"><a href="">Web Dev</a></h4>
+                        <p class="description">
+                            Website brings the customers and flow your business. We build the creative and unique
+                            website for your business as per your need
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-file"></i></div>
+                        <h4 class="title"><a href="">Graphics Design</a></h4>
+                        <p class="description">
+                            Visual graphics attract customers on the internet. We have team of professional graphics
+                            designer to design creative logo and banners for you
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-tachometer"></i></div>
+                        <h4 class="title"><a href="">Sales and Lead Generation</a></h4>
+                        <p class="description">
+                            We are the master in lead generation on multiple domains. Including Real-Estate, Education,
+                            Health, personal services, etc
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-world"></i></div>
+                        <h4 class="title"><a href="">SEO</a></h4>
+                        <p class="description">Search engine optimization is the process of ranking your website on
+                            search engines. We helps to rank you on top of Google and other Search engines
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-6 col-6">
+                    <div class="icon-box">
+                        <i class="ri-store-line" style="color: #ffbb2c;"></i>
+                        <h3><a href="">Lorem Ipsum</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <div class="icon-box">
+                        <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
+                        <h3><a href="">Dolor Sitema</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mt-4 mt-md-0">
+                    <div class="icon-box">
+                        <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+                        <h3><a href="">Sed perspiciatis</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mt-4 mt-lg-0">
+                    <div class="icon-box">
+                        <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
+                        <h3><a href="">Magni Dolores</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mt-4">
+                    <div class="icon-box">
+                        <i class="ri-database-2-line" style="color: #47aeff;"></i>
+                        <h3><a href="">Nemo Enim</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mt-4">
+                    <div class="icon-box">
+                        <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
+                        <h3><a href="">Eiusmod Tempor</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mt-4">
+                    <div class="icon-box">
+                        <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
+                        <h3><a href="">Midela Teren</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mt-4">
+                    <div class="icon-box">
+                        <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
+                        <h3><a href="">Pira Neve</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mt-4">
+                    <div class="icon-box">
+                        <i class="ri-anchor-line" style="color: #b2904f;"></i>
+                        <h3><a href="">Dirada Pack</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mt-4">
+                    <div class="icon-box">
+                        <i class="ri-disc-line" style="color: #b20969;"></i>
+                        <h3><a href="">Moton Ideal</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mt-4">
+                    <div class="icon-box">
+                        <i class="ri-base-station-line" style="color: #ff5828;"></i>
+                        <h3><a href="">Verdo Park</a></h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 mt-4">
+                    <div class="icon-box">
+                        <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
+                        <h3><a href="">Flavor Nivelanda</a></h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Features Section -->
+
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <br>
+    <div class="text-center">
+        <div class="copyright">
+            &copy; Copyright <strong style="color: #e43c5c;">Customer <span>Churn</span></strong>. All Rights
+            Reserved
+        </div>
+        <div class="credits">
+            Designed by <a href="">Alex Corporation</a>
+        </div>
+    </div>
+    <br><br>
+
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+<script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+<!-- Template Main JS File -->
+<script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

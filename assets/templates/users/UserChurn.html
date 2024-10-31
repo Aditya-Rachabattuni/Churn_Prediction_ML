@@ -1,0 +1,118 @@
+{% extends 'users/userbase.html' %} {% block title %} {% endblock %} 
+{% block user_home %}active{% endblock %} {% block content %}
+{% load static}
+<style>
+h3{
+  margin-top: 6%;
+}
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+</style>
+<div class="slider slider-revolution revolution-slider  fullwidth">
+  <div class="shadowWrapper">
+<center>
+  <h3>Add Information to Test</h3>
+  <form action="{%url 'UserTestRecordResult'%}" method="POST"  style="width:100%">
+    {% csrf_token %}
+  <table class="sm-table" cellspacing="5px" cellpadding="5%"; align="center">
+    <tr>
+        <th>Fields  </th>
+        <th>Input Values </th>
+    </tr>
+    <tr>
+        <td>Name </td>
+        <td><input type="text" name="name" required > </td>
+    </tr>
+    
+    <tr>
+        <td>Gender</td>
+        <td><select name="gender" required>
+            <!-- <option value="">--Select--</option> -->
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select> </td>
+    </tr>
+    <tr>
+        <td>Age</td>
+        <td><input type="number" name="age" min="18" max="85" required> </td>
+    </tr>
+    <tr>
+      <td>Education</td>
+      <td><select name="education" required>
+        <!--  <option value="">--Select--</option> -->
+          <option value="2">UnderGraduates</option>
+          <option value="1">Graduates</option>
+          <option value="0">Masters</option>
+      </select> </td>
+  </tr>
+    <tr>
+        <td>Experience</td>
+        <td> <input type="number" name="experience" min="1" max="10" required> </td>
+    </tr>
+    <tr>
+        <td>Income</td>
+        <td> <input type="number" name="income" min="10000" required> </td>
+    </tr>
+    <tr>
+      <td>Partner</td>
+      <td><select name="Partner" required>
+         <!-- <option value="">--Select--</option> -->
+          <option value="1">yes</option>
+          <option value="0">No</option>
+      </select> </td>
+  </tr>
+  <tr>
+    <td>Tenure</td>
+    <td> <input type="number" name="tenure" min="1" max="80" required> </td>
+</tr>
+<tr>
+  <td>OnlineSecurity</td>
+  <td><select name="OnlineSecurity" required>
+     <!-- <option value="">--Select--</option> -->
+      <option value="1">yes</option>
+      <option value="0">No</option>
+  </select> </td>
+</tr>
+<tr>
+  <td>StreamingTV</td>
+  <td><select name="StreamingTV" required>
+      <!-- <option value="">--Select--</option> -->
+      <option value="1">yes</option>
+      <option value="0">No</option>
+  </select> </td>
+</tr>
+<tr>
+  <td>StreamingMoives</td>
+  <td><select name="StreamingMovies" required>
+      <!-- <option value="">--Select--</option> -->
+      <option value="1">yes</option>
+      <option value="0">No</option>
+  </select> </td>
+</tr>
+<tr>
+  <td>Contract</td>
+  <td><select name="Contract" required>
+     <!-- <option value="">--Select--</option> -->
+     <option value="2">Two year</option>
+      <option value="1">One year</option>
+      <option value="0">Month-to-month</option>
+  </select> </td>
+</tr>
+<tr>
+  <td>MonthlyCharges</td>
+  <td> <input type="number" name="MonthlyCharges" min="1" required> </td>
+</tr>
+<tr>
+<td><button type="submit" value="Register" class="sendmail alignright">Predict</button></td>
+     </tr>
+<h2><tr>The User <font color='{{color}}'>{{msg}}</font></tr></h2>
+</table>
+</form>
+</center>
+</div></div>
+
+{% endblock %}
